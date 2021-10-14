@@ -10,6 +10,6 @@ now i can code/use:
 7. css native
 
 
-![Activity](https://github-readme-stats.vercel.app/api?username=herlangga72)
+![Activity](https://github-readme-stats.vercel.app/api?username=herlangga72&count_private=true&show_icons=true&theme=dark)
 
-![Composition of my repos](https://github-readme-stats.vercel.app/api/top-langs/?username=herlangga72)
+![Composition of my repos](https://github-readme-stats.vercel.app/api/top-langs/?username=herlangga72&count_private=true&show_icons=true&theme=dark&layout=compact&langs_count=10)
