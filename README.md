@@ -5,9 +5,11 @@ now i can code/use:
 2. Django Rest Framework
 3. javascript native, jquery
 4. expressjs [ node ]
-5. svelte
+5. sveltekit
 6. tailwindcss, windicss
 7. css native
+8. php native
+9. jquery
 
 
 ![Activity](https://github-readme-stats.vercel.app/api?username=herlangga72&count_private=true&show_icons=true&theme=dark)
