@@ -1,15 +1,21 @@
 # Hi, I'm Herlangga Yusuf Syailendra
-## i recently trying linux and now using archlinux
+I'm an Software Engineer, I an entusiast on Project like Automations, Data Scraping, and Optimizeing Cost On Cloud Platform 
+
 now i can code/use:
 1. python with qt gui [Desktop Apps]
-2. Django Rest Framework
-3. javascript native, jquery
-4. expressjs [ node ]
-5. sveltekit
-6. tailwindcss, windicss
-7. css native
-8. php native
-9. jquery
+2. Django Rest Framework,
+3. FastAPI
+4. Selenium
+5. Pandas
+6. Google Cloud Platform
+7. AWS
+9. javascript native, jquery
+10. expressjs [ node ]
+11. sveltekit
+12. tailwindcss, windicss
+13. css native
+14. php native
+15. jquery
 
 
 ![Activity](https://github-readme-stats.vercel.app/api?username=herlangga72&count_private=true&show_icons=true&theme=dark)
