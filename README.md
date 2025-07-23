@@ -20,8 +20,6 @@ now i can code/use:
 
 ![Activity](https://github-readme-stats.vercel.app/api?username=herlangga72&count_private=true&show_icons=true&theme=dark)
 ![Composition of my repos](https://github-readme-stats.vercel.app/api/top-langs/?username=herlangga72&count_private=true&show_icons=true&theme=dark&layout=compact&langs_count=10)
-[![My LeetCode stats](https://leetcode-stats-six.vercel.app/?username=KnlnKS&theme=dark)](https://github.com/KnlnKS/leetcode-stats)
-
 
 Open Project That I Join
 1. [Teknum Blog](https://github.com/teknologi-umum/blog)
