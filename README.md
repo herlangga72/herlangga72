@@ -39,7 +39,7 @@ Focused on scalable backend systems, secure domain management, and cost-efficien
   * Aggregated logs and usage data into BigQuery with cost-efficient query design.
 
 * **Distributed Systems (Mailing Pipeline):**
-  * Built event-driven email tracking system using **AWS SES → AWS SNS → Custom Service → ClickHouse**.
+  * Built event-driven email tracking system using **ListMonk → AWS SES → AWS SNS → Custom Service → ClickHouse**.
   * Processed delivery, bounce, complaint, and engagement events in near real-time.
   * Designed ingestion service for high-throughput event handling and normalization.
   * Stored and queried large-scale email analytics in ClickHouse for reporting and monitoring.
