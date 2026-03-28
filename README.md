@@ -34,10 +34,16 @@ Focused on scalable backend systems, secure domain management, and cost-efficien
   * Linux (Ubuntu, Amazon Linux), Docker
 
 * **Monitoring & Observability:**
-  * Implemented **Grafana dashboards connected to BigQuery** for website analytics and system monitoring.
-  * Monitored applications deployed on **Google Cloud Run** with query-based metrics and time-series visualization.
-  * Designed data pipelines to aggregate logs and usage metrics into BigQuery for analysis.
-  * Optimized query cost and performance for near real-time monitoring use cases.
+  * Implemented Grafana dashboards connected to BigQuery for website analytics and monitoring.
+  * Monitored services deployed on Google Cloud Run using query-based metrics.
+  * Aggregated logs and usage data into BigQuery with cost-efficient query design.
+
+* **Distributed Systems (Mailing Pipeline):**
+  * Built event-driven email tracking system using **AWS SES → AWS SNS → Custom Service → ClickHouse**.
+  * Processed delivery, bounce, complaint, and engagement events in near real-time.
+  * Designed ingestion service for high-throughput event handling and normalization.
+  * Stored and queried large-scale email analytics in ClickHouse for reporting and monitoring.
+  * Ensured reliability with retry handling, idempotent processing, and queue-based architecture.
 
 * **Distributed Rendering:**
   * Designed and managed Blender-based rendering farm for parallel job processing.
