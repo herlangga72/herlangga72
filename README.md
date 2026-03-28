@@ -1,90 +1,54 @@
 # Herlangga Yusuf Syailendra
-**Software Engineer | Backend, Data & Infrastructure Specialist**
+Backend / Data / Infrastructure Engineer
 
-Focused on scalable backend systems, secure domain management, and cost-efficient cloud architectures.
-
----
-
-### Technical Stack
-
-* **Backend Engineering:**
-  * Python (FastAPI, Django), Node.js (Express), Rust (Actix), Go.
-  * Designed RESTful and gateway APIs (OpenAI/Ollama-compatible → AWS Bedrock).
-  * Implemented high-performance services with focus on concurrency and low-latency responses.
-  * Applied context optimization (compression, offloading) for LLM-based systems.
-  * Built middleware for validation, feature gating, and request standardization.
-
-* **Data Engineering (SatuData UMS):**
-  * Developed data pipelines for institutional analytics and reporting.
-  * Orchestrated workflows using Airflow and n8n (scheduled & event-driven).
-  * Managed OLAP systems (ClickHouse, BigQuery, AWS Athena) for large-scale queries.
-  * Synced OLAP → OLTP data for dashboarding and operational use (e.g., Grafana).
-
-* **Databases:**
-  * OLTP: PostgreSQL, MySQL  
-  * OLAP: ClickHouse, BigQuery
-
-* **Cloud & DevOps (SatuData UMS):**
-  * Managed infrastructure on AWS & GCP with cost optimization strategies.
-  * Designed API gateways and lightweight service layers for unified access.
-  * Implemented logging, monitoring, and query optimization for high-load systems.
-
-* **Infrastructure:**
-  * NGINX (reverse proxy, load balancer, API gateway)
-  * Linux (Ubuntu, Amazon Linux), Docker
-
-* **Monitoring & Observability:**
-  * Implemented Grafana dashboards connected to BigQuery for website analytics and monitoring.
-  * Monitored services deployed on Google Cloud Run using query-based metrics.
-  * Aggregated logs and usage data into BigQuery with cost-efficient query design.
-
-* **Distributed Systems (Mailing Pipeline):**
-  * Built event-driven email tracking system using **ListMonk → AWS SES → AWS SNS → Custom Service → ClickHouse**.
-  * Processed delivery, bounce, complaint, and engagement events in near real-time.
-  * Designed ingestion service for high-throughput event handling and normalization.
-  * Stored and queried large-scale email analytics in ClickHouse for reporting and monitoring.
-  * Ensured reliability with retry handling, idempotent processing, and queue-based architecture.
-
-* **Distributed Rendering:**
-  * Designed and managed Blender-based rendering farm for parallel job processing.
-  * Implemented job distribution, queueing, and node coordination across multiple machines.
-  * Optimized resource utilization (CPU/GPU scheduling) for batch rendering workloads.
-  * Automated rendering pipelines and output aggregation.
-
-* **Frontend (Basic):**
-  * SvelteKit, TailwindCSS (internal tools & dashboards)
+Builds scalable backend systems, data pipelines, and cloud infrastructure with focus on performance, reliability, and cost efficiency.
 
 ---
 
-### System Management & Security
+## Experience Highlights
 
-* **Domain Governance (Cloudflare):** DNS lifecycle, zone management, and environment-based routing.
-* **Edge Security:** WAF, bot protection, rate limiting, Zero Trust enforcement.
-* **Access Control:** Identity-based access (Cloudflare Access) for internal systems.
-* **Traffic Management:** Load balancing, failover, and edge routing strategies.
-* **SSL/TLS:** Automated certificate management and HTTPS enforcement.
+- Reduced system latency from ~4s to **<100ms** through backend and infrastructure optimization  
+- Lowered cloud cost by **~40%** via architecture and query improvements  
+- Built monitoring system (Grafana + BigQuery) with **5x faster anomaly detection**  
 
 ---
 
-### NGINX & Linux Administration
+## Systems
 
-* **API Gateway & Reverse Proxy:** Centralized routing and upstream management for services.
-* **Performance Optimization:** Worker tuning, connection scaling, and caching strategies.
-* **Security Hardening:** HSTS, CSP, rate limiting, IP filtering.
-* **Linux Operations:** systemd services, firewall (iptables/ufw), SSH hardening.
-* **Observability & Automation:** Logging, monitoring, cron jobs, and bash scripting.
+### Email Pipeline
+AWS SES → SNS → Service → ClickHouse  
+- Processed **500K+ events** (delivery, bounce, engagement)  
+- Handled **50K+ emails** with strong deliverability (SPF, DKIM, DMARC)  
+- Idempotent, retry-safe ingestion design  
+
+### Data Platform
+- Migrated Athena → BigQuery for better performance and cost control  
+- Built OLAP pipelines for analytics  
+- OLAP → OLTP sync for dashboards and services  
+
+### Observability
+Cloud Run + BigQuery + Grafana  
+- Centralized logging and monitoring  
+- Query-driven metrics for services  
+
+### Other Systems
+- API gateway for AI services (OpenAI / Ollama → Bedrock)  
+- Distributed Blender rendering (multi-node)  
 
 ---
 
-### Open Source & Projects
+## Tech Stack
 
-* **Teknum Blog** – Technical writing platform.  
-* **Spectator** – Monitoring and tooling system.  
-* **Mr-Packages** – Package discovery platform.  
+**Backend:** Python, Node.js, Rust, Go  
+**Data:** ClickHouse, BigQuery, Athena  
+**Infra:** NGINX, Linux, Docker  
+**Cloud:** AWS, GCP  
+**Monitoring:** Grafana  
 
 ---
 
-### Contact
+## Links
 
-* **Email:** herlangga72@pakar-it.com  
-* **LinkedIn:** linkedin.com/in/herlangga72  
+- GitHub: https://github.com/herlangga72  
+- LinkedIn: https://linkedin.com/in/herlangga72  
+- Email: herlangga72@gmail.com  
