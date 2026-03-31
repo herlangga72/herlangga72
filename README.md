@@ -84,7 +84,6 @@ Cloud Run + BigQuery + Grafana
    - Clickhouse
    - SQlite
 
-    
   <details>
     <summary>View Screenshots : 
     
@@ -96,7 +95,6 @@ Cloud Run + BigQuery + Grafana
   </details>
   
 - Distributed Blender rendering (multi-node)
-  
   Repository : [Blender Script](https://github.com/herlangga72/Python-Blender-By-Herlangga)
   
 - n8n Automation for Email Processing
