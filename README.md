@@ -39,7 +39,9 @@ Cloud Run + BigQuery + Grafana
     <p>Website Uptime Monitoring using Uptime Kuma -> Discord </p>
   </div>
 - Query-driven metrics for services
+
   Documentation Of Basic Infrastructure
+
   Dashboard Example:
   <div align="center">
     <img width="1868" alt="image" src="https://github.com/user-attachments/assets/7a2464dd-0b41-469e-bdd0-2b77f071566d" />
@@ -48,7 +50,9 @@ Cloud Run + BigQuery + Grafana
   
 ### Other Systems
 - API gateway for AI services (OpenAI / Ollama → Bedrock)
+  
   Result : [AWS Bedrock Wrapper to OpenAI Compatible](https://github.com/herlangga72/AWS-Bedrock-Wrapper-to-OpenAI-Compatible)
+  
   Technology Used:
    - Rust
    - Clickhouse
