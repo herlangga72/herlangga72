@@ -20,10 +20,16 @@ AWS SES → SNS → Service → ClickHouse
 - Processed **500K+ events** (delivery, bounce, engagement)  
 - Handled **50K+ emails** with strong deliverability (SPF, DKIM, DMARC)  
 - Idempotent, retry-safe ingestion design
-  <div align="center">
-    <img width="1878" height="936" alt="image" src="https://github.com/user-attachments/assets/05357ec0-1ec6-4adc-b01d-e8acb1d457fc" />
-    <p> Monitoring Email from SES Dumped to Clickhouse, We Can See Who Open And Click at Low Cost, and making it an good method to create and estabilish leads</p>
-  </div>
+
+  <details>
+    <summary>View Screenshots : 
+    
+    **Monitoring Email from SES Dumped to Clickhouse, We Can See Who Open And Click at Low Cost, and making it an good method to create and estabilish leads**</summary>
+    <div align="center">
+      <img width="1878" height="936" alt="image" src="https://github.com/user-attachments/assets/05357ec0-1ec6-4adc-b01d-e8acb1d457fc" />
+      <p> Monitoring Email from SES Dumped to Clickhouse, We Can See Who Open And Click at Low Cost, and making it an good method to create and estabilish leads</p>
+    </div>
+  </details>
 
 
 ### Data Platform
@@ -35,23 +41,38 @@ AWS SES → SNS → Service → ClickHouse
 ### Observability
 Cloud Run + BigQuery + Grafana  
 - Centralized logging and monitoring
-  <div align="center">
-    <img width="1881" height="941" alt="image" src="https://github.com/user-attachments/assets/a760c7c5-894c-47b0-bd7f-46942343d435" />
-    <p>Website Latency and Load Monitoring Dumped fron Cloudrun -> Log Router -> BigQuery -> Grafana -> Alert -> Discord </p>
-  </div>
-  <div align="center">
-    <img width="1884" height="944" alt="image" src="https://github.com/user-attachments/assets/2d022086-0dcf-4d1d-a044-7f338d8e7c43" />
-    <p>Website Uptime Monitoring using Uptime Kuma -> Discord </p>
-  </div>
+  <details>
+    <summary>View Screenshots : 
+    
+    **Website Latency and Load Monitoring Dumped fron Cloudrun -> Log Router -> BigQuery -> Grafana -> Alert -> Discord**</summary>
+    
+    <div align="center">
+      <img width="1881" height="941" alt="image" src="https://github.com/user-attachments/assets/a760c7c5-894c-47b0-bd7f-46942343d435" />
+    </div>
+  </details>
+  <details>
+    <summary>View Screenshots : 
+    
+    **Website Uptime Monitoring using Uptime Kuma -> Discord**</summary>
+    
+    <div align="center">
+      <img width="1884" height="944" alt="image" src="https://github.com/user-attachments/assets/2d022086-0dcf-4d1d-a044-7f338d8e7c43" />
+    </div>
+  </details>
 - Query-driven metrics for services
 
-  Documentation Of Basic Infrastructure
-
   Dashboard Example:
-  <div align="center">
-    <img width="1868" alt="image" src="https://github.com/user-attachments/assets/7a2464dd-0b41-469e-bdd0-2b77f071566d" />
-    <p>Analyzing Token Usage From <b>"AWS Bedrock Wrapper to OpenAI Compatible"</b> Project and Monitor it's Cost</p>
-  </div>
+  <details>
+    <summary>View Screenshots : 
+    
+    **Analyzing Token Usage From <b>"AWS Bedrock Wrapper to OpenAI Compatible"</b> Project and Monitor it's Cost**
+    </summary>
+    
+    <div align="center">
+      <img width="1868" alt="image" src="https://github.com/user-attachments/assets/7a2464dd-0b41-469e-bdd0-2b77f071566d" />
+      <p></p>
+    </div>
+  </details>
   
 ### Other Systems
 - API gateway for AI services (OpenAI / Ollama → Bedrock)
@@ -61,13 +82,33 @@ Cloud Run + BigQuery + Grafana
   Technology Used:
    - Rust
    - Clickhouse
-   - SQlite 
+   - SQlite
+
+    
+  <details>
+    <summary>View Screenshots : 
+    
+    **Application Footprint**</summary>
+
+    <div align="center">
+      <img width="1600" height="658" alt="image" src="https://github.com/user-attachments/assets/2aa0fe3b-6674-4d4d-abcd-362161ddc943" />
+    </div>
+  </details>
+  
 - Distributed Blender rendering (multi-node)
+  
+  Repository : [Blender Script](https://github.com/herlangga72/Python-Blender-By-Herlangga)
+  
 - n8n Automation for Email Processing
-  <div align="center">
-    <img width="1878" height="930" alt="image" src="https://github.com/user-attachments/assets/a74e5020-2157-4d2e-9368-dd5feb9a1eb1" />
-    <p>n8n That triggered from email -> Listmonk -> Discord -> Review -> Send   </p>
-  </div>
+  <details>
+    <summary>View Screenshots : 
+    
+    **n8n That triggered from email -> Listmonk -> Discord -> Review -> Send**</summary>
+
+    <div align="center">
+      <img width="1878" height="930" alt="image" src="https://github.com/user-attachments/assets/a74e5020-2157-4d2e-9368-dd5feb9a1eb1" />
+    </div>
+  </details>
 
 ---
 
