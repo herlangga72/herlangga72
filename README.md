@@ -24,17 +24,28 @@ AWS SES → SNS → Service → ClickHouse
 ### Data Platform
 - Migrated Athena → BigQuery for better performance and cost control  
 - Built OLAP pipelines for analytics  
-- OLAP → OLTP sync for dashboards and services  
+- OLAP → OLTP sync for dashboards and services
+
 
 ### Observability
 Cloud Run + BigQuery + Grafana  
 - Centralized logging and monitoring  
-- Query-driven metrics for services  
-
+- Query-driven metrics for services
+  Documentation Of Basic Infrastructure
+  Dashboard Example:
+  <div align="center">
+    <img width="1868" alt="image" src="https://github.com/user-attachments/assets/7a2464dd-0b41-469e-bdd0-2b77f071566d" />
+    <p>Analyzing Token Usage From <b>"AWS Bedrock Wrapper to OpenAI Compatible"</b> Project</p>
+  </div>
+  
 ### Other Systems
-- API gateway for AI services (OpenAI / Ollama → Bedrock)  
-- Distributed Blender rendering (multi-node)  
-
+- API gateway for AI services (OpenAI / Ollama → Bedrock)
+  Result : [AWS Bedrock Wrapper to OpenAI Compatible](https://github.com/herlangga72/AWS-Bedrock-Wrapper-to-OpenAI-Compatible)
+  Technology Used:
+   - Rust
+   - Clickhouse
+   - SQlite 
+- Distributed Blender rendering (multi-node)
 ---
 
 ## Tech Stack
