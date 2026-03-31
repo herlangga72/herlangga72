@@ -83,6 +83,8 @@ Cloud Run + BigQuery + Grafana
 
 ## Links
 
-- GitHub: https://github.com/herlangga72  
-- LinkedIn: https://linkedin.com/in/herlangga72  
-- Email: herlangga72@gmail.com  
+- GitHub: [https://github.com/herlangga72](https://github.com/herlangga72)
+- LinkedIn: [https://linkedin.com/in/herlangga72](https://linkedin.com/in/herlangga72)  
+- Email: [mailto://herlangga72@gmail.com](mailto://herlangga72@gmail.com)
+- Website: [https://herlangga.web.id](https://herlangga.web.id)
+- Web Profile: [https://herlangga72.github.io/herlangga72/](https://herlangga72.github.io/herlangga72/)
