@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herlangga Yusuf Syailendra | Backend & Infra Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.2);
+            --border: #334155;
+            --success: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        header {
+            padding: 6rem 0 4rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-bio {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            transition: color 0.3s, transform 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Highlights Section */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: -3rem 0 4rem;
+        }
+
+        .highlight-card {
+            background-color: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .highlight-card i {
+            color: var(--success);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-card h3 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        .highlight-card strong {
+            color: var(--accent);
+        }
+
+        /* Section Global */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        /* Tech Stack */
+        .stack-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .stack-category h4 {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--accent-glow);
+        }
+
+        /* Systems/Experience */
+        .system-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .system-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .system-flow {
+            font-family: monospace;
+            background: rgba(0,0,0,0.3);
+            padding: 0.75rem;
+            border-radius: 6px;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .system-card ul {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .system-card ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .system-card ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .system-img-container {
+            margin-top: 1.5rem;
+            background: rgba(0,0,0,0.2);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .system-img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        .system-img-container p {
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            header { padding: 4rem 0 2rem; }
+            .highlights { margin-top: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="hero-title">Herlangga Yusuf Syailendra</h1>
+            <h2 class="hero-subtitle">Backend / Data / Infrastructure Engineer</h2>
+            <p class="hero-bio">
+                Building scalable backend systems, data pipelines, and cloud infrastructure with a relentless focus on performance, reliability, and cost efficiency.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/herlangga72" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/herlangga72" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:herlangga72@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+
+        <div class="highlights">
+            <div class="highlight-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Reduced latency from ~4s to <strong>&lt;100ms</strong> via backend and infra optimization.</h3>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Lowered cloud costs by <strong>~40%</strong> through architecture & query improvements.</h3>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-search-dollar"></i>
+                <h3>Built observability stacks achieving <strong>5x faster</strong> anomaly detection.</h3>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="section-title"><i class="fas fa-layer-group"></i> Tech Stack</h2>
+            
+            <div class="stack-category">
+                <h4>Backend</h4>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Rust</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">Node.js</span>
+                </div>
+            </div>
+
+            <div class="stack-category">
+                <h4>Data</h4>
+                <div class="tags">
+                    <span class="tag">ClickHouse</span>
+                    <span class="tag">BigQuery</span>
+                    <span class="tag">Athena</span>
+                </div>
+            </div>
+
+            <div class="stack-category">
+                <h4>Infrastructure & Cloud</h4>
+                <div class="tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">GCP</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">NGINX</span>
+                </div>
+            </div>
+
+            <div class="stack-category">
+                <h4>Observability</h4>
+                <div class="tags">
+                    <span class="tag">Grafana</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title"><i class="fas fa-server"></i> Systems & Architecture</h2>
+
+            <div class="system-card">
+                <h3>High-Volume Email Pipeline</h3>
+                <div class="system-flow">AWS SES → SNS → Service → ClickHouse</div>
+                <ul>
+                    <li>Processed <strong>500K+ events</strong> (delivery, bounce, engagement).</li>
+                    <li>Handled <strong>50K+ emails</strong> with strong deliverability guarantees (SPF, DKIM, DMARC).</li>
+                    <li>Designed an idempotent, retry-safe ingestion architecture.</li>
+                </ul>
+                <div class="system-img-container">
+                    <img src="https://github.com/user-attachments/assets/05357ec0-1ec6-4adc-b01d-e8acb1d457fc" alt="Email Pipeline Architecture">
+                    <p>Monitoring Email from SES Dumped to Clickhouse for low-cost lead generation and engagement tracking.</p>
+                </div>
+            </div>
+
+            <div class="system-card">
+                <h3>Data Platform Modernization</h3>
+                <ul>
+                    <li>Migrated from Athena to <strong>BigQuery</strong> to drastically improve query performance and cost control.</li>
+                    <li>Built robust OLAP pipelines for internal analytics.</li>
+                    <li>Engineered OLAP → OLTP synchronization to power real-time dashboards and microservices.</li>
+                </ul>
+            </div>
+
+            <div class="system-card">
+                <h3>Comprehensive Observability Stack</h3>
+                <div class="system-flow">Cloud Run → Log Router → BigQuery → Grafana → Discord</div>
+                <ul>
+                    <li>Centralized logging and monitoring for highly distributed services.</li>
+                    <li>Implemented query-driven metrics to detect anomalies swiftly.</li>
+                </ul>
+                <div class="system-img-container">
+                    <img src="https://github.com/user-attachments/assets/a760c7c5-894c-47b0-bd7f-46942343d435" alt="Latency Monitoring">
+                    <p>Website Latency and Load Monitoring</p>
+                </div>
+                <div class="system-img-container">
+                    <img src="https://github.com/user-attachments/assets/7a2464dd-0b41-469e-bdd0-2b77f071566d" alt="Token Usage Dashboard">
+                    <p>Analyzing Token Usage & Cost for AWS Bedrock Wrapper</p>
+                </div>
+            </div>
+
+            <div class="system-card">
+                <h3>Other Notable Systems</h3>
+                <ul>
+                    <li><strong>AWS Bedrock Wrapper:</strong> Built an OpenAI-compatible API Gateway for AI services (OpenAI / Ollama → Bedrock) using <strong>Rust, ClickHouse, and SQLite</strong>. <a href="https://github.com/herlangga72/AWS-Bedrock-Wrapper-to-OpenAI-Compatible" target="_blank" style="color: var(--accent); text-decoration: none;">[View Repository]</a></li>
+                    <li><strong>Distributed Rendering:</strong> Configured multi-node distributed Blender rendering infrastructure.</li>
+                    <li><strong>n8n Automation:</strong> Built complex email processing workflows integrating Listmonk and Discord.</li>
+                </ul>
+                <div class="system-img-container">
+                    <img src="https://github.com/user-attachments/assets/a74e5020-2157-4d2e-9368-dd5feb9a1eb1" alt="n8n Automation Flow">
+                    <p>n8n Triggered from Email → Listmonk → Discord → Review → Send</p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Herlangga Yusuf Syailendra. Engineered for scale.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
