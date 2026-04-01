@@ -94,8 +94,9 @@ Cloud Run + BigQuery + Grafana
     </div>
   </details>
   
-- Distributed Blender rendering (multi-node)
-  Repository : [Blender Script](https://github.com/herlangga72/Python-Blender-By-Herlangga)
+- Blender rendering CLI (works good on server)
+  
+  Repository : [Blender Script](https://github.com/herlangga72/Blender-CLI-TUI-Renderer)
   
 - n8n Automation for Email Processing
   <details>
